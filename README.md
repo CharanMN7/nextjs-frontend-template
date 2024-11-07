@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next 14 Template
 
-## Getting Started
+This is a Next.js 14 template that sets up a bunch of things that I commonly use in my Next.js projects.
 
-First, run the development server:
+> I'll constantly update this as I discover more things I use quite frequently.
 
+Here's what the template comes with:
+- Next.js `v14.2.17`
+- Tailwind CSS
+- Font: Inter
+- Shadcn (includes all components and dark mode setup)
+- Prettier
+
+Shadcn configuration:
+- Theme: New York
+- Base Color: Zinc
+- CSS Variables: yes
+
+> To learn more about shadcn, visit [shadcn docs](https://ui.shadcn.com/docs/)
+
+---
+## Usage
+
+Here's how to use it:
+
+1. Install the dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the dev server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+As mentioned above, prettier is also included. Once you're done writing your code, you can run the following command to format it with prettier:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run format
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Prettier
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Prettier helps keep the code formatting in sync across everyone's copies of the project. And it also make your code look better (in my opinion). If you don't wish to use prettier, follow these steps to remove it from the template:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Replace the `.eslintrc.json` file's code with the following code:
+```js
+{
+  "extends": ["next/core-web-vitals", "next/typescript"]
+}
+```
+2. Delete the `.prettierrc` file.
+3. Remove the following from the `devDependenices` in the `package.json` file:
+```js
+"eslint-config-prettier": "^9.1.0"
+"eslint-plugin-prettier": "^5.2.1"
+"prettier": "3.3.3"
+```
+4. Run the following command:
+```bash
+npm install
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️  
+by [Charan](https://charan.dev/)

@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   // Change this to your liking:
-  title: "Charan's Next14 Template",
-  description: "This is a Next14 template created by Charan (https://charan.dev/)",
+  title: "Charan's Next 14 Template",
+  description: "This is a Next 14 template created by Charan (https://charan.dev/)",
 };
 
 export default function RootLayout({

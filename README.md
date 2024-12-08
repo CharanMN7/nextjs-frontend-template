@@ -5,7 +5,8 @@ This is a Next.js 14 template that sets up a bunch of things that I commonly use
 > I'll constantly update this as I discover more things I use quite frequently.
 
 Here's what the template comes with:
-- Next.js `v14.2.17`
+- Next.js `v15.0.4`
+- React 19
 - Tailwind CSS
 - Font: Inter
 - Shadcn (includes all components and dark mode setup)

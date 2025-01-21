@@ -1,6 +1,6 @@
 # Next 14 Template
 
-This is a Next.js 14 template that sets up a bunch of things that I commonly use in my Next.js projects.
+This is a Next.js 15 template that sets up a bunch of things that I commonly use in my Next.js projects.
 
 > I'll constantly update this as I discover more things I use quite frequently.
 
